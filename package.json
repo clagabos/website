@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "build": "yarn build-assets && cargo build --release",
+        "start": "yarn build-assets && cargo run",
+        "build-assets": "yarn build-pub-assets && yarn move-public",
+        "build-pub-assets": "yarn delete-all-files-in-public && parcel build assets/html/public.html --dist-dir public --public-url /assets",
+        "move-public": "shx mv public/public.html templates/container/public.html",
+        "delete-all-files-in-public": "shx rm -rf public/*"
+    },
+    "devDependencies": {
+        "parcel": "^2.7.0",
+        "shx": "^0.3.4"
+    },
+    "license": "see LICENSE",
+    "private": true
+}

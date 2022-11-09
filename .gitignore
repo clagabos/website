@@ -1,0 +1,13 @@
+# Ignore Rust stuff that we don't need to check
+target/
+
+# Node
+node_modules/
+.parcel-cache/
+
+public/
+templates/container/public.html
+
+# Other stuff
+.vscode/
+.env

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" type="image/webp" href="../img/favicon.webp" />
+        <script src="../js/global.js" defer></script>
+        <title>clarke | {{page_name.to_lowercase()}}</title>
+    </head>
+    <body theme="dark">
+        <main>
+            <div class="illustration-wrapper">
+                <img class="illustration butterfly invert" src="../img/butterfly.webp" aria-hidden="true" />
+                <img class="illustration flower1" src="../img/flower1.webp" aria-hidden="true" />
+                <img class="illustration flower2" src="../img/flower2.webp" aria-hidden="true"/>
+                <img class="illustration welcome" src="../img/welcome.webp" aria-hidden="true"/>
+            </div>
+
+            <nav>
+                <a href="/"><div><p>Home</p></div></a>
+                <a href="/about"><div><p>About</p></div></a>
+                <a href="/links"><div><p>Links</p></div></a>
+                <a href="/dreams"><div><p>Dreams</p></div></a>
+            </nav>
+
+            <article>
+                {% block content %}
+                {% endblock %}
+            </article>
+
+            <footer>
+                <p style="margin: 0; padding: 0">
+                    steal my code? 
+                    <a href="https://github.com/clagabos/website/">this site's open source, after all.</a>
+                </p>
+            </footer>
+        </main>
+        <script async defer src="../js/cabin.js"></script>
+        <script src="../js/instantpage.js" type="module"></script>
+    </body>
+</html>

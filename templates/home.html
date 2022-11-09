@@ -1,0 +1,37 @@
+{% extends "container/public.html" %}
+
+{% block content %}
+<h1>Hey there!</h1>
+
+<p>Welcome to my website, I go by Clarke online. I miss the old
+    days of the internet, when it was a place of wonder and
+    discovery.</p>
+
+<p>Unfortunately, the modern web consists of websites with
+    excessive scripts (form validation, animations, tracking
+    information, etc.) and stylesheets. Not to mention the
+    manipulation and commodification of ourselves and our data by
+    big tech companies.</p>
+
+<p>I'm trying to do my part to make the web a better place by
+    creating a lightweight website that is mine, and mine alone. I
+    hope you enjoy your stay here and find something useful.</p>
+
+<noscript>
+    <p>Looks like you have javascript disabled, which is fine, I
+        respect your decision, but certain features of this website
+        will not work.</p>
+</noscript>
+
+<hr />
+
+<!-- TODO make this functional
+    <p>
+        The last song I listened to was <strong>SONG_NAME</strong> by <strong>SONG_ARTIST</strong> on the album <strong>SONG_ALBUM</strong>.
+    </p>
+    -->
+<p>
+    I'm currently reading <strong>The Anthropocene Reviewed</strong> by <strong>John Green</strong>.
+</p>
+<p style="display: none;">It is currently <strong id="time_in_uk">TIME_HERE</strong> in my timezone.</p>
+{% endblock %}

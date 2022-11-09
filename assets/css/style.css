@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+html, body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body[theme="dark"] {
+    --bg-color: #2a292e;
+    --header-color: #96c1e9;
+    --strong-color: #96c1e9;
+    --color: #ccc;
+    --a-color: #7783f2;
+    --pre-bg-color: #222;
+    --pre-border-color: #949494 solid 1px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-family: 'Ubuntu Mono', monospace;
+    line-height: 1.45;
+    padding: 0 1em;
+}
+
+main {
+    max-width: 896px;
+    min-height: 100vh;
+    color: var(--color);
+    margin: 0 auto;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    font-size: small;
+}
+
+a {
+    color: var(--a-color);
+}
+
+blockquote {
+    border-left: solid 1px;
+    padding: 0 1em;
+}
+
+h1 {
+    color: var(--header-color);
+    font-size: 2em;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--color);
+    margin: 1em 0;
+}
+
+pre {
+    padding: 1em;
+    background-color: var(--pre-bg-color);
+    border: var(--pre-border);
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+footer {
+    margin-top: auto;
+    border-top: 1px solid var(--color);
+    padding: .4em .1em;
+    font-size: small;
+}
+
+strong {
+    font-weight: normal;
+    color: var(--strong-color);
+}
+
+nav {
+    display: flex;
+    margin-top: 4px;
+    gap: 8px;
+    user-select: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:active,
+nav a:focus {
+    transform: scale(0.9);
+    outline: 0;
+}
+
+nav div {
+    height: 31px;
+    width: 88px;
+    overflow: hidden;
+    background-image: url("../img/empty_button.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+details.dreams > summary {
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+}
+details.dreams > summary::-webkit-details-marker {
+    display: none;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.illustration-wrapper {
+    z-index: -1;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+}
+
+.illustration {
+    position: absolute;
+}
+
+.illustration.butterfly {
+    width: 6em;
+    top: 12px;
+    right: 32px;
+}
+
+.illustration.welcome {
+    width: 12em;
+    top: 6em;
+    left: -13em;
+    transform: rotate(-12deg);
+    filter: invert(0.8);
+}
+
+.illustration.lion {
+    width: 6em;
+    top: 6em;
+    left: -8em;
+    transform: rotate(3deg);
+    filter: invert(0.8);
+}
+
+.illustration.flower1 {
+    height: 8em;
+    bottom: -5px;
+    left: 24px;
+    transform: rotate(97deg);
+}
+
+.illustration.flower2 {
+    height: 8em;
+    bottom: -8px;
+    left: 160px;
+    transform: rotate(-84deg);
+}
+
+/* form css*/
+label,input {
+    display: block;
+    margin-left: 0;
+}
+
+input[type="submit"] {
+    margin-top: 1em;
+}
+
+.ws-widget {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size: small;
+    margin: 2px 4px;
+}
+
+@media(max-width: 1424px) {
+    .ws-widget {
+        display: none !important;
+    }
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
